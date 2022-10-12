@@ -1,0 +1,228 @@
+.app__accueil {
+  position: absolute;
+  top : 8%;
+  width: 100vw;
+
+  @media screen and (min-width: 680px){
+    top: 6%;
+  }
+
+  &-mainInfos{
+    height : 95vh;
+    background-image: url(../../assets/images/bg-smart.png);
+    background-size: cover;
+    text-align: center;
+    background-position: top;
+
+    @media screen and (min-width: 1200px){
+      height : 95vh;
+      background-image: url(../../assets/images/bg-plain.jpg);
+      background-size: cover;
+      background-position: top;
+    }
+
+
+    .title{
+      color : var(--primary-color);
+      font-size: 2.5rem;
+      padding-top: 6%;
+      line-height: 4rem;
+      text-shadow: 1px 1px 1px var(--secondary-color);
+
+      @media screen and (min-width: 680px){
+        font-size: 3.5rem;
+        padding-top: 10%;
+      }
+
+      @media screen and (min-width: 1200px){
+        padding-top: 4%;
+        font-size: 4rem;
+        padding-bottom: 7%;
+      }
+    }
+
+    
+
+    .text{
+      color : var(--primary-color);
+      font-weight: bold;
+      font-size: 1.7rem;
+      padding-top: 20%;
+      line-height: 2.5rem;
+      text-shadow: 2px 1px 1px black;
+
+      @media screen and (min-width: 680px){
+        font-size: 2.5rem;
+        width: 80%;
+        margin: auto;
+        padding-top: 10%;
+      }
+
+      @media screen and (min-width: 1200px){
+        width: 30%;
+        margin: auto;
+        padding-top: 0%;
+        padding-bottom: 2%;
+      }
+    }
+    
+
+    button{
+      margin-top: 5% !important;
+
+      @media screen and (min-width: 680px){
+        margin-top: 4% !important;
+        font-size: 1.3rem !important;
+      }
+
+      @media screen and (min-width: 1200px){
+        margin: 1% !important;
+        
+      }
+    }
+
+    .connexion-text{
+      margin-top: 14% !important;
+      color: var(--primary-color);
+
+      @media screen and (min-width: 680px){
+        margin-top: 5% !important;
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+
+      @media screen and (min-width: 1200px){
+        display: none;
+        line-height: 2.4rem;
+      }
+    }
+
+    .loggedText{
+      width: 55%;
+      margin: auto;
+      color : var(--primary-color);
+      font-weight: bold;
+      font-size: 1.7rem;
+      padding-top: 20%;
+      line-height: 2.5rem;
+      text-shadow: 1px 1px 1px var(--secondary-color);
+
+      @media screen and (min-width: 680px){
+        line-height: 5rem;
+      }
+
+      @media screen and (min-width: 1200px){
+        padding-top: 2%;
+        font-size: 4rem;
+        width: 40%;
+        
+      }
+    }
+ 
+  }
+
+  &-desc {
+    color: black;
+    text-align: center;
+   
+
+    &-infos {
+      border-bottom: 1px solid black;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media screen and (min-width: 680px){
+        height: auto;
+      }
+
+      @media screen and (min-width: 1200px){
+        min-height: 600px !important;
+      }
+      
+     
+      .img {
+        width: 300px !important;
+        height: 150px !important;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        
+        border-radius: 12px;
+        @media screen and (min-width: 680px){
+          width: 500px !important;
+          height: 300px !important;
+        }
+
+        @media screen and (min-width: 1200px){
+          width: 700px !important;
+          height: 450px !important;
+        }
+      }
+
+      &:nth-child(1){
+        background-color: var(--lightGray-color);
+      }
+      &:nth-child(3){
+        background-color: var(--lightGray-color);
+      }
+
+
+      @media screen and (min-width: 1200px){
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        height: 55vh;
+      }
+
+      
+    }
+
+    .infos {
+     
+      h1 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+
+        @media screen and (min-width: 680px){
+          margin-top: 1rem;
+          font-size: 1.8rem;
+        }
+
+        @media screen and (min-width: 1200px){
+          
+          font-size: 2.5rem;
+        }
+      }
+
+      &-span{
+        color: var(--secondary-color);
+      }
+
+      p {
+        width: 80%;
+        margin: auto;
+        margin-top: 1.2rem;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+
+        @media screen and (min-width: 680px){
+          width: 60%;
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+        @media screen and (min-width: 1200px){
+          width: 60%;
+          font-size: 2rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+
+    
+  }
+  }
+

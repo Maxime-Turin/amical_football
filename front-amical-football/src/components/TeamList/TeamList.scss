@@ -1,0 +1,44 @@
+.app__teamlist {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    margin: auto;
+
+    &-input {
+        width: 90%;
+        margin: auto;
+
+        @media screen and (max-width: 1200px) {
+            width: 75%;
+        }
+
+        @media screen and (max-width: 375px) {
+            width: 60%;
+        }
+    }
+}
+
+.ui.input.teamlist-input>input {
+    border: none;
+}
+
+.search.app__teamlist-icon {
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.ui.cards.teamlist-group {
+    justify-content: space-evenly;
+
+    &::after {
+        content: none;
+    }
+}
+
+.teamCard-img {
+    margin: 1rem auto;
+    width: auto;
+    height: 120px;
+    object-fit: contain;
+}

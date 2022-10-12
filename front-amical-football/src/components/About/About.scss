@@ -1,0 +1,43 @@
+.app__about {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (max-width: 1243px) {
+        height: unset;
+        padding: 25% 0;
+    }
+
+}
+
+.ui.orange.card.app__about-card {
+    min-height: 20vh;
+    margin: 1em 0;
+    text-align: center;
+    cursor: default;
+
+    .content {
+        .description {
+            height: 12vh;
+        }
+
+        .meta {
+            margin-top: 1rem;
+            height: 5vh
+        }
+
+
+        &.extra {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+    }
+
+
+
+}
